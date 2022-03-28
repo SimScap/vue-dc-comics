@@ -1,7 +1,8 @@
 <template>
+<div>
     <div class="centered-container">
       <div class="header-img-container">
-        <img src="../assets/images/dc-logo.png" alt="">
+        <img src="../assets/images/dc-logo.png" alt="dc-logo-header">
       </div>    
       <nav class="header-nav">
         <ul>
@@ -10,7 +11,13 @@
           </li>        
         </ul>
       </nav>
-    </div>   
+    </div>
+    <div class="content-goes">
+      <div class="centered-container">
+        <h3>..Content Goes Here..</h3>
+      </div>
+    </div>
+</div>
 </template>
 
 <script>
@@ -71,6 +78,10 @@ export default {
   a{
     text-decoration: none;
   }
+  h3{
+    color: white;
+    align-self: center;
+  }
   div.centered-container{
     display: flex;
     justify-content: space-between;
@@ -81,6 +92,9 @@ export default {
   div.header-img-container{
     border: 2px solid chocolate;
     display: flex;
+  }
+  div.header-img-container img{
+    padding: .8rem;
   }
   nav.header-nav{
     border: 2px solid magenta;
@@ -94,7 +108,10 @@ export default {
   }
   nav.header-nav ul li{
     align-self: center;
-  
   }
+  }
+  div.content-goes{
+    background-color: black;
+    height: 100px;
   }
 </style>
