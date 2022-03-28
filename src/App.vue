@@ -3,6 +3,7 @@
     <Header/>
     <Banner/>
     <Main/>
+    <Foter/>
   </div>
 </template>
 
@@ -10,6 +11,8 @@
 import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import Main from './components/Main.vue'
+import Foter from './components/Foter.vue'
+
 
 export default {
   name: 'App',
@@ -17,7 +20,7 @@ export default {
     Header,
     Banner,
     Main,
-    Footer 
+    Foter,
   }
 }
 </script>

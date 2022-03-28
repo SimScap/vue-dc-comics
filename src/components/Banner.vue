@@ -51,14 +51,15 @@ data: function(){
 div.blue-banner{
     height: 120px;
     background-color:rgb(2, 130, 249) ;
+    z-index: 2;
 div.blue-banner-container{
     display: flex;
     border: 2px solid green;
     width: 80%;
     margin: 0 auto;
     height: 120px;
-    padding: 1rem;
-    justify-content: space-around;
+    padding: .8rem;
+    justify-content: space-between;
 }
 }
 div.banner-list{
@@ -66,7 +67,9 @@ div.banner-list{
     display: flex;
 }
 div.banner-list img{
-    width: 60px;
+    width: 40px;
+    height: 50px;
+    align-self: center;
 }
 div.banner-list span{
     align-self: center;

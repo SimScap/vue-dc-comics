@@ -77,6 +77,7 @@ export default {
 @import "../assets/scss/partials/_variables.scss";
   a{
     text-decoration: none;
+    
   }
   h3{
     color: white;
@@ -108,6 +109,7 @@ export default {
   }
   nav.header-nav ul li{
     align-self: center;
+    font-size: .8rem;
   }
   }
   div.content-goes{
