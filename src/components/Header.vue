@@ -5,16 +5,9 @@
       </div>    
       <nav class="header-nav">
         <ul>
-          <li>CHARACTERS</li>
-          <li>COMICS</li>
-          <li>MOVIES</li>
-          <li>TV</li>
-          <li>GAMES</li>
-          <li>COLLECTIBLES</li>
-          <li>VIDEOS</li>
-          <li>FANS</li>
-          <li>NEWS</li>
-          <li>SHOP</li>
+          <li v-for="(link, index) in headerNavList" :key="index">
+            <a href="link.url">{{link.text}}</a>
+          </li>        
         </ul>
       </nav>
     </div>   
@@ -23,13 +16,61 @@
 <script>
 export default {
   name: 'IndexHeader',
+  data: function(){
+    return{
+      headerNavList : [
+        {
+        text:"CHARACTERS",
+        url : "#",
+      },
+       {
+        text:"COMICS",
+        url : "#",
+      },
+       {
+        text:"MOVIES",
+        url : "#",
+      },
+       {
+        text:"TV",
+        url : "#",
+      },
+       {
+        text:"GAMES",
+        url : "#",
+      },
+       {
+        text:"COLLECTIBLES",
+        url : "#",
+      },
+       {
+        text:"VIDEOS",
+        url : "#",
+      },
+       {
+        text:"FANS",
+        url : "#",
+      },
+       {
+        text:"NEWS",
+        url : "#",
+      },
+       {
+        text:"SHOP",
+        url : "#",
+      },
+      ]
+    }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../assets/scss/partials/_variables.scss";
-
+  a{
+    text-decoration: none;
+  }
   div.centered-container{
     display: flex;
     justify-content: space-between;
@@ -43,7 +84,7 @@ export default {
   }
   nav.header-nav{
     border: 2px solid magenta;
-    width: 70%;
+    width: 80%;
   }
   nav.header-nav ul{
     display: flex;
