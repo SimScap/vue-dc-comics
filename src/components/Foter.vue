@@ -6,21 +6,38 @@
         <div class="footer-nav">
             <a href="#">FOLLOW US</a>
             <ul>
-                <li>ff</li>
-                <li>ff</li>
-                <li>ff</li>
-                <li>ff</li>
-                <li>ff</li>
+                <li v-for="(link, index) in FooterList" :key="index">
+                    <img :src="'./images/' + link.imgName" :alt="link.text + 'image'">
+                </li>               
             </ul>
-
         </div>
-
     </div>
 </template>
 
 <script>
 export default {
 name: 'IndexHeader',
+data: function(){
+    return{
+    FooterList : [
+    {
+    imgName :"footer-facebook.png",
+    },
+    {
+    imgName :"footer-twitter.png",
+    },
+    {
+    imgName :"footer-youtube.png",
+    },
+    {
+    imgName :"footer-pinterest.png",
+    },
+    {
+    imgName :"footer-periscope.png",
+    },
+    ]
+}
+}
 }
 
 </script>
@@ -28,6 +45,7 @@ name: 'IndexHeader',
 <style scoped lang="scss">
 a{
     align-self: center;
+    text-decoration: none;
 }
 ul{
     list-style-type: none;

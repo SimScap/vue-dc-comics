@@ -191,8 +191,10 @@ div.main-list{
 div.logo-list{
     border: 2px solid red;
     width: 40%;
+    position: relative;
 }
 div.logo-list img{ 
-    width: 200px;
+    width: 260px;
+    position: absolute;
 }    
 </style>

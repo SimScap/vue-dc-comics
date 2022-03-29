@@ -70,6 +70,7 @@ div.banner-list img{
     width: 40px;
     height: 50px;
     align-self: center;
+    margin-right: .5rem;
 }
 div.banner-list span{
     align-self: center;
