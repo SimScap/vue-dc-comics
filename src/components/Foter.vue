@@ -61,7 +61,7 @@ li{
 }
 div.footer-background{
     background-color: rgb(48, 48, 48);
-    height: 100px;
+    height: 80px;
 }
 div.footer-wrap{
     display: flex;

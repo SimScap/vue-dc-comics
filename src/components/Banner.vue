@@ -67,8 +67,8 @@ div.banner-list{
     display: flex;
 }
 div.banner-list img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     align-self: center;
     margin-right: .5rem;
 }
