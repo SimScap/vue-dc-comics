@@ -67,13 +67,13 @@ div.banner-list{
     display: flex;
 }
 div.banner-list img{
-    width: 40px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     align-self: center;
     margin-right: .5rem;
 }
 div.banner-list span{
     align-self: center;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 </style>

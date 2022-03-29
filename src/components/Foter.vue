@@ -1,6 +1,7 @@
 <template>
-    <div class="footer-wrap">
-        <div class="footer-btn">
+    <div class="footer-background">
+        <div class="footer-wrap">
+            <div class="footer-btn">
             <button>SIGN-UP NOW!</button>
         </div>
         <div class="footer-nav">
@@ -10,6 +11,7 @@
                     <img :src="'./images/' + link.imgName" :alt="link.text + 'image'">
                 </li>               
             </ul>
+        </div>
         </div>
     </div>
 </template>
@@ -51,16 +53,23 @@ ul{
     list-style-type: none;
     display: flex;
     width: 80%;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 li{
     align-self: center;
+    margin-left: .8rem;
+}
+div.footer-background{
+    background-color: rgb(48, 48, 48);
+    height: 100px;
 }
 div.footer-wrap{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(48, 48, 48);
-    height: 100px;
+    border: 2px solid green;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
 }
 div.footer-btn{
     display: flex;
@@ -68,15 +77,20 @@ div.footer-btn{
     justify-content: center;
     width: 30%;
     border: 2px solid brown;
+    padding: .8rem;
 }
 div.footer-btn button{
-    width: 100px;
-    align-self: center;
-    border: 2px solid blue
+    width: 120px;
+    border: 2px solid blue;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: .5rem;
 }
 div.footer-nav{
     display: flex;
-    width: 50%;
+    justify-content: space-between;
+    width: 40%;
     border: 2px solid blue;
+    padding: .5rem;
 }
 </style>

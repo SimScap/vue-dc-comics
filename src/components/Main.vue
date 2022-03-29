@@ -185,7 +185,8 @@ div.main-list{
     border: 2px solid gold;
     width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: .8rem;
     
 }    
 div.logo-list{
