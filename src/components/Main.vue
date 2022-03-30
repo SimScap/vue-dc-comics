@@ -19,8 +19,7 @@
                     <li v-for="(sites, index) in MainSitesList" :key="index">{{sites.text}}</li>
                 </ul>            
             </div>
-            <div class="logo-list">
-            
+            <div class="logo-list">           
         </div>
         </div>         
     </div>

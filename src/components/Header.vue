@@ -7,7 +7,7 @@
       <nav class="header-nav">
         <ul>
           <li v-for="(link, index) in headerNavList" :key="index" :class="{ active: link.current}">
-            <a href="link.url"  >{{link.text}}</a>
+            <a href="link.url">{{link.text}}</a>
           </li>        
         </ul>
       </nav>
@@ -219,8 +219,12 @@ export default {
     background-color: black;
   }
   div.my-jumbotron img{
-    height: 270px;
     width: 100%;
+    height: 100%;
+  }
+  div.my-jumbotron{
+    border: 2px solid gold;
+    height: 300px;
   }
   div.my-card{
     width: calc(100% / 6);
