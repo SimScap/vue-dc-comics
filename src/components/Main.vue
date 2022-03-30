@@ -20,7 +20,7 @@
                 </ul>            
             </div>
             <div class="logo-list">
-            <img src="../assets/images/dc-logo-bg.png" alt="">
+            
         </div>
         </div>         
     </div>
@@ -190,12 +190,10 @@ div.main-list{
     
 }    
 div.logo-list{
+    background-image: url('../assets/images/dc-logo-bg.png');
+    background-position: center;
+    background-size: 100%;
     border: 2px solid red;
     width: 40%;
-    position: relative;
 }
-div.logo-list img{ 
-    width: 260px;
-    position: absolute;
-}    
 </style>

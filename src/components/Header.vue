@@ -219,7 +219,7 @@ export default {
     background-color: black;
   }
   div.my-jumbotron img{
-    height: 250px;
+    height: 270px;
     width: 100%;
   }
   div.my-card{
@@ -229,7 +229,7 @@ export default {
     text-align: center;
   }
   div.my-card img{
-    width: 100%;
+    width: 70%;
   }
   div.my-centered-container{
     display: flex;
